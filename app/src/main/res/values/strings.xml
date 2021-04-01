@@ -1,3 +1,6 @@
 <resources>
-    <string name="app_name">MovieAlarm</string>
+    <string name="app_name">TubeAlarm</string>
+    <string name="app_time">00:00</string>
+    <string name="app_add">タイマーの追加</string>
+    <string name="app_reset">リセット</string>
 </resources>
