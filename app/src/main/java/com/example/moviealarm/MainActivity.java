@@ -2,6 +2,7 @@ package com.example.moviealarm;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -37,8 +38,8 @@ public class MainActivity extends YouTubeBaseActivity {
         setContentView(R.layout.activity_main);
 
         mTextViewCountDown=findViewById(R.id.text_view_countdown);
-        mButtonStartPause=findViewById(R.id.button_start);
-        getmButtonReset=findViewById(R.id.button_reset);
+        //mButtonStartPause=findViewById(R.id.button_start);
+        //getmButtonReset=findViewById(R.id.button_reset);
         mYouTubePlayerView=findViewById(R.id.youtube_view);
 
         //youtube
@@ -54,6 +55,7 @@ public class MainActivity extends YouTubeBaseActivity {
             }
         };
 
+        /*
         //スタートボタンの中身
         mButtonStartPause.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -74,11 +76,22 @@ public class MainActivity extends YouTubeBaseActivity {
             }
         });
 
+         */
+
         mYouTubePlayerView.initialize(API_KEY,mOnInitializedListener);
-        updateCountDownText();
+        //updateCountDownText();
     }
 
+    public void clickTimer(View view) {
 
+    }
+
+    public void clickAlarm(View view) {
+        Intent intent = new Intent(this, Alarm.class);
+        startActivity(intent);
+    }
+
+    /*
     //buttonをクリックした時
     public void setClick(View view) {
         if (mTimerRunning) {
@@ -140,4 +153,6 @@ public class MainActivity extends YouTubeBaseActivity {
         String timerLeftFormatted = String.format(Locale.getDefault(),"%02d:%02d",minutes,second);
         mTextViewCountDown.setText(timerLeftFormatted);
     }
+
+     */
 }

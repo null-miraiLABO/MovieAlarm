@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#DDDDDD"
-    tools:context=".MainActivity">
+    tools:context=".Alarm">
 
     <view
         android:id="@+id/youtube_view"
@@ -38,7 +38,7 @@
         android:layout_marginStart="30dp"
         android:layout_marginBottom="40dp"
         android:minEms="5"
-        android:onClick="clickTimer"
+        android:onClick="clickTimer2"
         android:text="@string/bt_timer_activity"
         android:textSize="24sp" />
 
@@ -51,7 +51,7 @@
         android:layout_marginEnd="30dp"
         android:layout_marginBottom="40dp"
         android:minEms="5"
-        android:onClick="clickAlarm"
+        android:onClick="clickAlarm2"
         android:text="@string/bt_alarm_activity"
         android:textSize="24sp" />
 
@@ -67,29 +67,5 @@
         android:text="+"
         android:textColor="#FFFFFF"
         android:textSize="36sp" />
-
-    <!--
-    <Button
-        android:id="@+id/button_start"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/text_view_countdown"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="33dp"
-        android:layout_marginTop="50dp"
-        android:onClick="setClick"
-        android:text="@string/app_add" />
-
-    <Button
-        android:id="@+id/button_reset"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/text_view_countdown"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="186dp"
-        android:layout_marginTop="50dp"
-        android:onClick="resetClick"
-        android:text="@string/app_reset" />
-     -->
 
 </RelativeLayout>
