@@ -6,4 +6,13 @@
     <string name="app_add">タイマーのセット</string>
     <string name="app_start">スタート</string>
     <string name="app_reset">リセット</string>
+
+    <string name="dialog_title">時間を作成</string>
+    <string name="dialog_msg">時間を選択してください。</string>
+    <string name="dialog_btn_ok">作成</string>
+    <string name="dialog_btn_ng">キャンセル1</string>
+    <string name="dialog_btn_nu">キャンセル</string>
+    <string name="dialog_ok_toast">作成しました。</string>
+    <string name="dialog_ng_toast">作成をキャンセルしました。</string>
+    <string name="dialog_nu_toast">作成をキャンセルしました。</string>
 </resources>
