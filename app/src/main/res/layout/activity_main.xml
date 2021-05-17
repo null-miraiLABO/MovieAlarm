@@ -56,7 +56,7 @@
         android:textSize="24sp" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/MakeTimerBt"
         style="@style/Widget.AppCompat.Button"
         android:layout_width="60dp"
         android:layout_height="60dp"
