@@ -1,6 +1,7 @@
 package com.example.moviealarm;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -73,7 +74,7 @@ public class MainActivity extends YouTubeBaseActivity {
         @Override
         public void onClick(View view) {
             MakeTimeDialogFragment dialogFragment = new MakeTimeDialogFragment();
-            dialogFragment.show(getSupportFragmentManager(),"MakeTimeDialogFragment");
+            dialogFragment.show(/*getSupportFragmentManager()*/(FragmentManager) null,"MakeTimeDialogFragment");
         }
     }
 }

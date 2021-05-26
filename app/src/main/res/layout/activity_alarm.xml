@@ -7,6 +7,13 @@
     android:background="#EEEEEE"
     tools:context=".Alarm">
 
+    <ListView
+        android:id="@+id/list_todo"
+        android:background="#CCCCCC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </ListView>
+
     <Button
         android:id="@+id/timer"
         android:layout_width="wrap_content"
