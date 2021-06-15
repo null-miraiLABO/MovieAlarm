@@ -57,22 +57,3 @@ public class YoutubeApi extends YouTubeBaseActivity {
 
     }
 }
-
-/*
-
-
-public class MainActivity extends YouTubeBaseActivity {
-    private static final long START_TIME=10000;
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-
-    }
-
-
-}
-
- */
