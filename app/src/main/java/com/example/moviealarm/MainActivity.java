@@ -24,8 +24,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Button MakeTimerBt = findViewById(R.id.MakeTimerBt);
-        MakeTimeLintener lintener = new MakeTimeLintener();
-        MakeTimerBt.setOnClickListener(lintener);
+        //MakeTimeLintener lintener = new MakeTimeLintener();
+        //MakeTimerBt.setOnClickListener(lintener);
 
     }
 
@@ -38,11 +38,14 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    /*
     private class MakeTimeLintener implements View.OnClickListener{
         @Override
         public void onClick(View view) {
             MakeTimeDialogFragment dialogFragment = new MakeTimeDialogFragment();
-            dialogFragment.show(/*getSupportFragmentManager()*/(FragmentManager) null,"MakeTimeDialogFragment");
+            dialogFragment.show(getSupportFragmentManager(),"MakeTimeDialogFragment");
         }
     }
+
+     */
 }

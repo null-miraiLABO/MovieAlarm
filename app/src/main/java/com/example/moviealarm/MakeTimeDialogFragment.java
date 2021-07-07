@@ -37,6 +37,7 @@ public class MakeTimeDialogFragment extends DialogFragment {
             switch (which){
                 case DialogInterface.BUTTON_POSITIVE:
                     msg = getString(R.string.dialog_ok_toast);
+                    //listにアイテムを追加
                     break;
                 case DialogInterface.BUTTON_NEGATIVE:
                     msg = getString(R.string.dialog_ng_toast);
