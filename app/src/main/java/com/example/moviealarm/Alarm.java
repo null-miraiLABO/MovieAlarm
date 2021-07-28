@@ -31,6 +31,7 @@ public class Alarm extends AppCompatActivity {
 
     protected void onStart(){
         super.onStart();
+        /*
         listView = (ListView) findViewById(R.id.list_alarm);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -42,6 +43,8 @@ public class Alarm extends AppCompatActivity {
             }
         });
         lodeList();
+
+         */
     }
 
     public void clickTimer2(View view) {

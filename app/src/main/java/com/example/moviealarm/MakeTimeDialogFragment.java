@@ -3,7 +3,10 @@ package com.example.moviealarm;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.fragment.app.DialogFragment;
@@ -17,10 +20,19 @@ public class MakeTimeDialogFragment extends DialogFragment {
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         //ダイアログのタイトルを設定
         builder.setTitle(R.string.dialog_title);
-        //ダイアログのメッセージを設定
-        builder.setMessage(R.string.dialog_msg);
+        // EditTextを設定
+        final EditText et_url = new EditText(getActivity());
+        et_url.setHint("YoutubeURL貼り付け");
+        builder.setView(et_url);
         //Positive Buttonを設定
-        builder.setPositiveButton(R.string.dialog_btn_ok,new DialogButtonClickListener());
+        builder.setPositiveButton(R.string.dialog_btn_ok,new DialogButtonClickListener(){
+            //押した時にEditTextのなかみをToastで表示
+            @Override
+            public void onClick(DialogInterface dialog,int which){
+                String msg = et_url.getText().toString();
+                Toast.makeText(getActivity(),msg,Toast.LENGTH_LONG).show();
+            }
+        });
         //Negative Buttonを設定
         builder.setNegativeButton(R.string.dialog_btn_ng,new DialogButtonClickListener());
         //Neutral Buttonを設定
@@ -36,8 +48,8 @@ public class MakeTimeDialogFragment extends DialogFragment {
             String msg ="";
             switch (which){
                 case DialogInterface.BUTTON_POSITIVE:
-                    msg = getString(R.string.dialog_ok_toast);
-                    //listにアイテムを追加
+                    //dialogクラス内に記述。
+                        //<補足>dialogでstringをreturn出来ないので。キャスト変換も出来なかった。
                     break;
                 case DialogInterface.BUTTON_NEGATIVE:
                     msg = getString(R.string.dialog_ng_toast);
@@ -46,10 +58,8 @@ public class MakeTimeDialogFragment extends DialogFragment {
                     msg = getString(R.string.dialog_nu_toast);
                     break;
             }
-            //
             Toast.makeText(getActivity(),msg,Toast.LENGTH_LONG).show();
         }
     }
-
 
 }

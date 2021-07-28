@@ -38,7 +38,6 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    /*
     private class MakeTimeLintener implements View.OnClickListener{
         @Override
         public void onClick(View view) {
@@ -47,5 +46,4 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-     */
 }

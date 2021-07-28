@@ -7,12 +7,12 @@
     <string name="app_start">スタート</string>
     <string name="app_reset">リセット</string>
 
-    <string name="dialog_title">時間を作成</string>
-    <string name="dialog_msg">時間を選択してください。</string>
-    <string name="dialog_btn_ok">作成</string>
-    <string name="dialog_btn_ng">キャンセル1</string>
+    <string name="dialog_title">動画を設定</string>
+    <string name="dialog_msg">YoutubeURLを貼り付け</string>
+    <string name="dialog_btn_ok">次へ</string>
+    <string name="dialog_btn_ng">戻る</string>
     <string name="dialog_btn_nu">キャンセル</string>
-    <string name="dialog_ok_toast">作成しました。</string>
-    <string name="dialog_ng_toast">作成をキャンセルしました。</string>
+    <string name="dialog_ok_toast">時間の作成dialogを表示</string>
+    <string name="dialog_ng_toast">戻る</string>
     <string name="dialog_nu_toast">作成をキャンセルしました。</string>
 </resources>
