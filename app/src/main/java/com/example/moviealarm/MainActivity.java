@@ -24,8 +24,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Button MakeTimerBt = findViewById(R.id.MakeTimerBt);
-        //MakeTimeLintener lintener = new MakeTimeLintener();
-        //MakeTimerBt.setOnClickListener(lintener);
 
     }
 
